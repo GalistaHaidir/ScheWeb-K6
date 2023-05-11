@@ -2,7 +2,6 @@ body {
     background-color: #7387C4;
 }
 
-
 .collapse navbar-collapse{
     color: rgb(255, 253, 253);
     margin-left: 10px;
@@ -24,10 +23,6 @@ body {
     background: #f7f5f2;
     border-radius: 5px;
     color: black;
-}
-
-.container-fluid {
-    background-color: #7387C4;
 }
     
 #home{
