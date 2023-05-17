@@ -7,15 +7,15 @@ $error = "";
 $sukses = "";
 
 if (isset($_POST['simpan'])) {
-    $judul = $_POST['judul'];
-    $isi = $_POST['isi'];
-    $kutipan = $_POST['kutipan'];
+    $judul      = $_POST['judul'];
+    $isi        = $_POST['isi'];
+    $kutipan    = $_POST['kutipan'];
 
     if ($judul == '' or $isi == '') {
         $error = "Silahkan masukkan semua data yakni adalah data isi dan judul";
     }
     if (empty($error)) {
-        $sql1 = "insert into halaman(judul, kutipan, isi) values ('$judul', '$kutipan', '$isi')";
+        $sql1 = "insert into halaman(judul,isi,kutipan) values ('$judul','$isi','$kutipan')";
         $q1 = mysqli_query($koneksi, $sql1);
         if ($q1) {
             $sukses = "Sukses memasukkan data";
