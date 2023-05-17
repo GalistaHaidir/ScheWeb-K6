@@ -15,7 +15,23 @@
                     }
                 }
             },
-            height: 200
+            height: 200,
+            toolbar: [
+                ["style", ["bold", "italic", "underline", "clear"]],
+                ["fontname", ["fontname"]],
+                ["fontsize", ["fontsize"]],
+                ["color", ["color"]],
+                ["para", ["ul", "ol", "paragraph"]],
+                ["height", ["height"]],
+                ["insert", ["link", "picture", "imageList", "video", "hr"]],
+                ["help", ["help"]]
+            ],
+            dialogsInBody: true,
+            imageList: {
+                endpoint: "daftar_gambar.php",
+                fullUrlPrefix: "../gambar/",
+                thumbUrlPrefix: "../gambar/"
+            }
         });
 
         $.upload = function (file) {
